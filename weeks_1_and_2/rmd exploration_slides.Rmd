@@ -1,0 +1,26 @@
+---
+title: "Untitled"
+author: "Nima"
+date: "9/10/2019"
+output: ioslides_presentation
+---
+```{r load, warning= FALSE, echo=FALSE}
+library(gapminder)
+library(tibble)
+library(DT)
+```
+
+## print out gapminder data:
+
+```{r}
+gapminder
+```
+
+<!--This is a comment-->
+
+## convert mtcars into tibble, and wrap in datatable:
+
+```{r}
+datatable(as_tibble(mtcars))
+```
+
