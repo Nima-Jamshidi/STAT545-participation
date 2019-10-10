@@ -57,7 +57,7 @@ download.file(url = data_url,destfile = here::here("week_6","greatestGivers.xls"
 #or use basename
 
 file_name <- basename(data_url)
-download.file(url = data_url,destfile = here::here("week_6",file_name))
+download.file(url = data_url,destfile = here::here("week_6",file_name),mode = "wb")
 
 ```
 
