@@ -3,10 +3,10 @@ title: "Tibble Exploration"
 author: "Nima"
 date: "9/10/2019"
 output: 
-  html_document:
+  pdf_document:
     toc: true
     number_sections: true
-    theme: cerulean
+    keep_md: true
 ---
 ```{r, warning= FALSE, echo=FALSE}
 library(gapminder)
@@ -21,11 +21,17 @@ gapminder
 
 ```
 
+<!--html_document:
+    toc: true
+    number_sections: true
+    theme: cerulean
+    keep_md: true-->
 <!--This is a comment-->
 
 convert mtcars into tibble, and wrap in datatable:
 
 ```{r}
-datatable(as_tibble(mtcars))
+#datatable(as_tibble(mtcars))
+knitr::kable(as_tibble(mtcars))
 ```
 
